@@ -11,6 +11,7 @@
 \newtheorem{theorem}{Theorem}[subsection]
 
 \begin{document}
+\tableofcontents
 \section{Probability Theory}
 \subsection{Elemantary Probability}
 \begin{definition}[Cardano's Principle]
@@ -55,14 +56,65 @@
 \begin{definition}[Mutually exclusive]
     Two events $A_1$, $A_2$ are called mutual exclusive if $A_1\cap A_2=\emptyset$
 \end{definition}
+\begin{definition}[$\sigma$-Field]
+    Suppose that a non-empty set $S$ is given. A \emph{$\sigma$-field} $\mathcal{F}$ on S is a family of subsets of $S$ such that:
+   \begin{itemize}
+       \item $\emptyset \in \mathcal{F}$
+       \item If $A \in \mathcal{F}$, then $S\backslash A \in \mathcal{F}$
+       \item If $A_1,A_2,\dotsm \in \mathcal{F}$ is a finit sequence of subsets, then the union $\cup_k A_k \in \mathcal{F}$
+   \end{itemize}
+\end{definition}
+\subsubsection{Probability Measures and Spaces}
+\begin{definition}[Probability Measure]
+    Let $S$ be the sample space and $\mathcal{F}$ be a $\sigma$-field. Then a function
+    \begin{equation}
+        P:\mathcal{F} \rightarrow [0,1], A \rightarrow P[A],
+    \end{equation}
+    is called \emph{probability measure / probability function} on $S$ if
+    \begin{itemize}
+        \item $P[S]=1$
+        \item For any set of events ${A_k}\subset mathcal{F}$ such that $A_j \cap A_k = \emptyset$ for $j \neq k$,
+            \begin{equation}
+                P[\cup_k A_k] = \sum_{k} a_n P[A_k]
+            \end{equation}
+    \end{itemize}
+    \begin{theorem}[Basic Properties]
+        $P[A_1\cup A_2] = p[A_1]+P[A_2]-P[A_1\cap A_2]$
+    \end{theorem}
+\end{definition}
 
 
-
-
-
-
-
-
+\subsection{Conditional Probability}
+\begin{definition}[Conditional Probability]
+    B occurs given that A has occured
+    \begin{equation}
+        P[B \mid A] := \frac{P[A \cap B]}{P[A]}
+    \end{equation} 
+\end{definition}
+\subsubsection{Independence of Events}
+\begin{definition}[independent]
+    Two events are \emph{independent} if
+    \begin{equation}
+        P[A\cap B]=P[A]P[B]
+    \end{equation}
+    equivalent to
+    \begin{equation}
+        P[A\mid B] = P[A], P[B] \neq 0
+    \end{equation}
+\end{definition}
+\begin{definition}[Total Probability]
+    \begin{equation}
+        P[B] = P[B\mid A_1]*P[A_1]+\dotsm+P[B\mid A_n]P[A_n] = \sum_{k=1}^{n} P[B\mid A_k]\cdot P[A_k]
+    \end{equation}
+    is called total propability formula for $P[B]$
+\end{definition}
+\subsubsection{Bayes' Theorem}
+\begin{theorem}[Bayes's Theoremm]
+    Let $A_1,\dotsm, A_n \subset S$ be a set of pairwise mutually exclusive events whose union is $S$ and who each have non zero probability of occuring. Let $B\subset S$ be any events such that $P[B] \neq 0$. Then for any $A_k, k=1,\dotsm,n$
+    \begin{equation}
+        P[A_k\mid B] = \frac{P[B\cap A_k]}{P[B]} = \frac{P[B\mid A_k]\cdot P[A_k]}{\sum_{j=1}^{n} P[B\mid A_j]\cdot P[A_j]}
+    \end{equation}
+\end{theorem}
 
 
 
