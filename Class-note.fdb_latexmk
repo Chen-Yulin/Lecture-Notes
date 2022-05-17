@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1652798784 "Class-note.tex" "Class-note.pdf" "Class-note" 1652798823
+["pdflatex"] 1652800807 "Class-note.tex" "Class-note.pdf" "Class-note" 1652800808
   "/etc/texmf/web2c/texmf.cnf" 1648442041 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/chenyulin/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1652165516 11524 67eb1214e685c27febf24411688b98f2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -41,7 +41,6 @@
   "/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty" 1523134290 4116 32e6abd27229755a83a8b7f18e583890 ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty" 1523134290 2432 8ff93b1137020e8f21930562a874ae66 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1580683321 20023 e427dd9e17e239bf926ef3aab67fe35e ""
-  "/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd" 1580683321 2471 93c7889092ef3d83d375b915c5381dfe ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1580683321 8446 9874cccac5fee462272c582807dbbf56 ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -56,14 +55,17 @@
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1496786006 5317 cf75154a8a7e6436f05a5be497f0b05e ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty" 1580683321 10216 5efd55f2010055e7b7875afd6a75be82 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
+  "/usr/share/texmf/tex/latex/CJK/CJK.enc" 1485503905 29591 b3c404288523518719bdabea6811228d ""
+  "/usr/share/texmf/tex/latex/CJK/CJK.sty" 1485503905 32721 8e131bb8a9a2f3a0ef2f239af995b5af ""
+  "/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty" 1485503905 12177 49651d89af4c43f72d2608ca28d9934d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652150275 213520 fccbfdd4f70b9f20759340628329575d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652150280 5070099 d9cc9e6fc91a70a0b7dba6e2ce374c6f ""
-  "Class-note.aux" 1652798785 1691 f66e989e8697300424526c74911b552d "pdflatex"
-  "Class-note.tex" 1652798808 8625 10b21365e3241a1ef52c2e3e42a1938b ""
-  "Class-note.toc" 1652798785 1109 d5370b59aee66e8c13ecbb007aad10e2 "pdflatex"
+  "Class-note.aux" 1652800808 1691 f66e989e8697300424526c74911b552d "pdflatex"
+  "Class-note.tex" 1652800807 8902 23608e06846ead1ca951d7c78141d068 ""
+  "Class-note.toc" 1652800808 1109 d5370b59aee66e8c13ecbb007aad10e2 "pdflatex"
   (generated)
   "Class-note.aux"
-  "Class-note.toc"
-  "Class-note.log"
   "Class-note.pdf"
+  "Class-note.log"
+  "Class-note.toc"

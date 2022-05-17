@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{
+    CJK,
     amsthm,
     amsmath,
     amssymb,
@@ -163,7 +164,7 @@ where $x \in R$ and $A \subset S$ is the event containing all sample points $p$ 
 Random variable comes with a probability density function or probability distribution $f_X$ that allows the calculation of probability directly.\\
 Follows:
 \begin{itemize}
-    \item $f_X(x)\textgreater 0$ for all $x$
+    \item $f_X(x)> 0$ for all $x$
     \item $\sum_{X\in \Omega} f_X(x)=1$ 
 \end{itemize}
 \begin{definition}[Cumulative distribution function]
@@ -181,11 +182,12 @@ and probability of success $0<p<1$
 \begin{definition}[Bernoulli Random Variable]
     Let $S$ be a sample space and $X:S\rightarrow {0,1}\in \mathbb{R}$, Let $0<P<1$, then define the density function
     \begin{equation}
-        f_X:{0,1}\rightarrow R \quad f_X(x)=\{
+        f_X:{0,1}\rightarrow R \quad f_X(x)=\left \{
             \begin{aligned}
                 &\;1-p\; &for\; x=0\qquad \\
                 &\;p  & for\;x=1\qquad
             \end{aligned}
+            \right.
     \end{equation}
     Then $X$ is said to be a \emph{Bernoulli random variable} or follow a \emph{Bernoulli distribution} with parameter $p$.
     We indicate this by writing
@@ -210,7 +212,15 @@ and probability of success $0<p<1$
     \end{equation}
     Let $ 0<p<1 $ and define the density function
     \begin{equation}
-        f_X:\Omega \right \mathbb{R},\quad f_X(x)=\tbinom{n}{x}p_x(1-p)^{n-x}
+        f_X:\Omega \rightarrow \mathbb{R},\quad f_X(x)=\tbinom{n}{x}p_x(1-p)^{n-x}
+    \end{equation}
+    Then $ X $ is said to be a binomial random variable with parameters n and p. Indicate this by writing
+    \begin{equation}
+        X \sim B(n,p)
+    \end{equation}
+    Also:
+    \begin{equation}
+        B(1,p) = Bernoulli(p)
     \end{equation}
 \end{definition}
 
