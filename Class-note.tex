@@ -116,8 +116,83 @@
     \end{equation}
 \end{theorem}
 
+\subsection{Discrete Random Variables}
+\begin{definition}[Random Variable]
+    Such function X
+    \begin{equation}
+        X: S \rightarrow \mathbb{R}
+    \end{equation}
+    is a random variable. X has numerical values that are derived from the outcome of a random experiment.
+\end{definition}
+Two types:
+\begin{itemize}
+    \item \emph{Discrete Random Variables}: countable range in $\mathbb{R}$
+        \begin{definition}[Discrete Random Variable]
+            Let S be sample space, $\Omega$ a countable subset of $\mathbb{R}$.
+            A \emph{discrete random variable} is a map
+            \begin{equation}
+                X: S\rightarrow \Omega
+            \end{equation}
+            \begin{equation}
+                f_X: \Omega \rightarrow \mathbb{R}
+            \end{equation}
+        \end{definition}
+        A random variable is often given by the pair $(X,f_X)$
+    \item \emph{Continuous Random Variables}: having a range equal to $\mathbb{R}$
+\end{itemize}
+\emph{Example}:\\
+Flip a coin three times, sample space can be given by :
+\begin{equation}
+    S={(t,t,t),(t,t,h),(t,h,t),\dotsm,(h,h,h)}
+\end{equation}
+Then we can define $X$ as follows:
+\begin{equation}
+    X(t,t,t)=0,X(t,t,h)=1,\dotsm,X(h,h,h)=3
+\end{equation}
+X denotes the number of heads
+\begin{equation}
+    P[X=1]=P[(t,t,h),(t,h,t),(h,t,t)]
+\end{equation}
+We can write
+\begin{equation}
+    P[X=x] = P[A]
+\end{equation}
+where $x \in R$ and $A \subset S$ is the event containing all sample points $p$ such that $X(p)=x$.
 
-
+\subsubsection{PDF and CDF}
+Random variable comes with a probability density function or probability distribution $f_X$ that allows the calculation of probability directly.\\
+Follows:
+\begin{itemize}
+    \item $f_X(x)\textgreater 0$ for all $x$
+    \item $\sum_{X\in \Omega} f_X(x)=1$ 
+\end{itemize}
+\begin{definition}[Cumulative distribution function]
+    Cumulative distribution function of a random variable is defined as 
+    \begin{equation}
+        F_X:\mathbb{R}\rightarrow \mathbb{R}, F_X(x):=P[X\leq x]
+    \end{equation}
+    For discrete random variable, $F_X(x) = \sum_{y\leq x} f_X(y) $
+\end{definition}
+\subsubsection{Bernoulli Random Variable}
+\begin{definition}[Bernoulli Trial]    
+Consider an experiment can only results in two possible outcomes, such as success or failure.
+and probability of success $0<p<1$
+\end{definition}
+\begin{definition}[Bernoulli Random Variable]
+    Let $S$ be a sample space and $X:S\rightarrow {0,1}\in \mathbb{R}$, Let $0<P<1$, then define the density function
+    \begin{equation}
+        f_X:{0,1}\rightarrow R \quad f_X(x)=\left \{
+            \begin{aligned}
+                &\;1-p\; &for\; x=0\qquad \\
+                &\;p  & for\;x=1\qquad
+            \end{aligned}
+    \end{equation}
+    Then $X$ is said to be a \emph{Bernoulli random variable} or follow a \emph{Bernoulli distribution} with parameter $p$.
+    We indicate this by writing
+    \begin{equation}
+        X \sim Bernoulli(p)
+    \end{equation}
+\end{definition}
 
 
 
