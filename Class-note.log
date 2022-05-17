@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.10)  17 MAY 2022 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.10)  17 MAY 2022 22:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -214,28 +214,31 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 166.
 
-./Class-note.tex:189: You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.189     \end{equation}
-                        
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+[4]
+Overfull \hbox (6.14226pt too wide) in paragraph at lines 207--208
+\OT1/cmr/bx/n/10 Definition 1.3.6 \OT1/cmr/m/n/10 (Bi-no-mal Ran-dom Vari-able)\OT1/cmr/bx/n/10 . $\OML/cmm/m/it/10 S$\OT1/cmr/m/n/10 : sam-ple space, $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 mathbbN\OMS/cmsy/m/n/10 n\OT1/cmr/m/n/10 0$
+ []
 
-./Class-note.tex:189: Missing \right. inserted.
-<inserted text> 
-                \right .
-l.189     \end{equation}
-                        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+./Class-note.tex:213: Missing delimiter (. inserted).
+<to be read again> 
+                   \math@bgroup 
+l.213         f_X:\Omega \right \mathbb
+                                       {R},\quad f_X(x)=\tbinom{n}{x}p_x(1-p...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
 
-[4] (./Class-note.aux) ) 
+./Class-note.tex:213: Extra \right.
+<to be read again> 
+                   \math@bgroup 
+l.213         f_X:\Omega \right \mathbb
+                                       {R},\quad f_X(x)=\tbinom{n}{x}p_x(1-p...
+I'm ignoring a \right that had no matching \left.
+
+[5] (./Class-note.aux) ) 
 Here is how much of TeX's memory you used:
  2923 strings out of 482663
  40289 string characters out of 5955139
@@ -243,12 +246,12 @@ Here is how much of TeX's memory you used:
  18078 multiletter control sequences out of 15000+600000
  536236 words of font info for 39 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 37i,8n,31p,259b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,7n,31p,259b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/chenyulin/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Class-note.pdf (4 pages, 157473 bytes).
+Output written on Class-note.pdf (5 pages, 159469 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,3 +9,6 @@
 \contentsline {subsection}{\numberline {1.3}Discrete Random Variables}{3}%
 \contentsline {subsubsection}{\numberline {1.3.1}PDF and CDF}{4}%
 \contentsline {subsubsection}{\numberline {1.3.2}Bernoulli Random Variable}{4}%
+\contentsline {subsubsection}{\numberline {1.3.3}Independent and Identical Trials}{5}%
+\contentsline {subsubsection}{\numberline {1.3.4}Counting Successes in a Saquance of Trials}{5}%
+\contentsline {subsubsection}{\numberline {1.3.5}Binomal Random Variable}{5}%

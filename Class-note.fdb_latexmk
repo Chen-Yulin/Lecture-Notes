@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1652776936 "Class-note.tex" "Class-note.pdf" "Class-note" 1652776936
+["pdflatex"] 1652798784 "Class-note.tex" "Class-note.pdf" "Class-note" 1652798823
   "/etc/texmf/web2c/texmf.cnf" 1648442041 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/chenyulin/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1652165516 11524 67eb1214e685c27febf24411688b98f2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -59,11 +59,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652150275 213520 fccbfdd4f70b9f20759340628329575d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652150280 5070099 d9cc9e6fc91a70a0b7dba6e2ce374c6f ""
-  "Class-note.aux" 1652775975 1306 fe2e4a4067d9ba03025c3b977e031f4e "pdflatex"
-  "Class-note.tex" 1652776934 7791 ab7039f073ec88496b15d042a99a441f ""
-  "Class-note.toc" 1652775975 847 d87363f222fb6405c1fcc9fafe434db0 "pdflatex"
+  "Class-note.aux" 1652798785 1691 f66e989e8697300424526c74911b552d "pdflatex"
+  "Class-note.tex" 1652798808 8625 10b21365e3241a1ef52c2e3e42a1938b ""
+  "Class-note.toc" 1652798785 1109 d5370b59aee66e8c13ecbb007aad10e2 "pdflatex"
   (generated)
-  "Class-note.log"
-  "Class-note.toc"
-  "Class-note.pdf"
   "Class-note.aux"
+  "Class-note.toc"
+  "Class-note.log"
+  "Class-note.pdf"
