@@ -176,7 +176,7 @@ Follows:
 \end{definition}
 \subsubsection{Bernoulli Random Variable}
 \begin{definition}[Bernoulli Trial]    
-Consider an experiment can only results in two possible outcomes, such as success or failure.
+Consider an experiment can only results in two possible outcomes, such as success or failure.\\
 and probability of success $0<p<1$
 \end{definition}
 \begin{definition}[Bernoulli Random Variable]
@@ -223,9 +223,25 @@ and probability of success $0<p<1$
         B(1,p) = Bernoulli(p)
     \end{equation}
 \end{definition}
-
-
-
+\subsubsection{Cumulative Distribution Function}
+\begin{definition}[Cumulative Distribution Function]
+    \begin{equation}
+        F_X:\mathbb{R}\rightarrow \mathbb{R},\qquad F_X(x):= P[X\leq x]
+    \end{equation}
+    For a discrete random variable
+    \begin{equation}
+        F_X(x)=\sum_{y\leq x} f_X(y)
+    \end{equation}
+    In case of binomial distribution,
+    \begin{equation}
+        F_X(x) = \sum_{y=0}^{[x]}\tbinom{n}{y}p^y(1-p)^{n-y}
+    \end{equation}
+    $ [x] $ denote the largest integer not greater than $ x $. 
+\end{definition}
+MMA command:\\
+\textbf{CDF[BinomalDistribution[n,p],x]}
+\subsubsection{The Geometric Distribution}
+Another example: suppose er perform a sequence of Bernoulli trials which continues until a success is obtained. We then define the \emph{geometric random variable} $ X $ to denote the number of trials needed to obtain the first success.
 
 \end{document}
 
