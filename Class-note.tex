@@ -241,7 +241,30 @@ and probability of success $0<p<1$
 MMA command:\\
 \textbf{CDF[BinomalDistribution[n,p],x]}
 \subsubsection{The Geometric Distribution}
-Another example: suppose er perform a sequence of Bernoulli trials which continues until a success is obtained. We then define the \emph{geometric random variable} $ X $ to denote the number of trials needed to obtain the first success.
+Another example: suppose er perform a sequence of Bernoulli trials which continues until a success is obtained. We then define the \emph{geometric random variable} $ X $ to denote the number of trials needed to obtain the first success.\\
+Example:\\
+Result $ (t,t,t,h) $, geometric random variable $ X $ attains value $ X=4 $
+\begin{definition}[Geometric Random Variable]
+    \begin{equation}
+        X:S\rightarrow \Omega = \mathbb{N}\backslash \{0\}
+    \end{equation}
+    Let $ 0<p<1 $ and define density function $ f_X(x):\mathbb{N}\backslash\{0\} \rightarrow\mathbb{R} $
+    \begin{equation}
+        f_X(x)=(1-p)^{x-1}p
+    \end{equation}
+    then, $ X $ is a geometric random variable with parameter $ p $ 
+    \begin{equation}
+        X \sim Geom(p)
+    \end{equation}
+\end{definition}
+The cumulative distribution fuction for a geometrically distributed random variable $ (X,f_X) $ with parameter $ p $ is given by
+\begin{equation}
+    F(x)=P[X\leq x] = 1-(1-p)^{[x]}
+\end{equation}
+\subsection{Expectation, Variance and Moments}
+
+
+
+
 
 \end{document}
-
