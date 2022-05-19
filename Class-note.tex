@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{
+    CJK,
     amsthm,
     amsmath,
     amssymb,
@@ -145,7 +146,48 @@ Let X be a finit set. For a positive integer k, let $\tbinom{X}{k}$ denote the s
             &   p \land (p \lor q) \Leftrightarrow p    \\
             &   p \lor (p \land q) \Leftrightarrow p
         \end{align*}
+    \item Cases
+        \begin{align*}
+            & (p\rightarrow q)\land(p\rightarrow r) \Leftrightarrow p\rightarrow (q\land r)\\
+            & (p\rightarrow q)\lor(p\rightarrow r) \Leftrightarrow p\rightarrow (q\lor r)\\
+            & (p\rightarrow r)\land(p\rightarrow r) \Leftrightarrow (p\lor q)\rightarrow r\\
+            & (p\rightarrow r)\lor(p\rightarrow r) \Leftrightarrow (p\land q)\rightarrow r
+        \end{align*}
+    \item Added premise
+        \begin{align*}
+            (p\land q)\rightarrow r &\Leftrightarrow p\rightarrow(q\rightarrow r)\\
+                                    &\Leftrightarrow q\rightarrow (p\rightarrow r)
+        \end{align*}
 \end{itemize}
+\subsubsection{CNF and DNF}
+\begin{theorem}[Disjunctive Normal Form]
+    For any proposition $ \varphi $, there is a proposition $ \varphi_{dnf} $ over same Boolean variables and in DNF such that $ \varphi \Leftrightarrow \varphi_{dnf} $
+\end{theorem}
+Example:
+\begin{align*}
+    & \varphi=p\rightarrow q \qquad &\varphi_{dnf}=(\lnot p)\lor (q)\\
+    & \varphi = p \leftrightarrow q &\varphi_{dnf} = (p\land q)\lor (\lnot q \land \lnot p)\\
+    & \varphi = p \oplus q &\varphi_{dnf} = (\lnot p \land q)\lor (p\land \lnot q)
+\end{align*}
+Just like sum of product.
+\begin{theorem}[Conjunctive Normal Form]
+    For any proposition $ \varphi $, there is a proposition $ \varphi_{cnf} $ over same Boolean variables and in DNF such that $ \varphi \Leftrightarrow \varphi_{cnf} $
+\end{theorem}
+Example:
+\begin{align*}
+    & \varphi=p\rightarrow q \qquad &\varphi_{dnf}=(\lnot p\lor q)\\
+    & \varphi = p \leftrightarrow q &\varphi_{dnf} = (\lnot p\lor q)\land (\lnot q \lor p)\\
+    & \varphi = p \oplus q &\varphi_{dnf} = (p \lor q)\land (\lnot p\lor \lnot q)
+\end{align*}
+Just like product of sum.
+
+
+
+
+
+
+
+
 
 
 

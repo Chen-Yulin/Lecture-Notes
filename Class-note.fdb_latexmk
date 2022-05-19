@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1652446720 "Class-note.tex" "Class-note.pdf" "Class-note" 1652505061
+["pdflatex"] 1652923956 "Class-note.tex" "Class-note.pdf" "Class-note" 1652923957
   "/etc/texmf/web2c/texmf.cnf" 1648442041 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/chenyulin/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1652165516 11524 67eb1214e685c27febf24411688b98f2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -64,12 +64,15 @@
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1496786006 5317 cf75154a8a7e6436f05a5be497f0b05e ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty" 1580683321 10216 5efd55f2010055e7b7875afd6a75be82 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
+  "/usr/share/texmf/tex/latex/CJK/CJK.enc" 1485503905 29591 b3c404288523518719bdabea6811228d ""
+  "/usr/share/texmf/tex/latex/CJK/CJK.sty" 1485503905 32721 8e131bb8a9a2f3a0ef2f239af995b5af ""
+  "/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty" 1485503905 12177 49651d89af4c43f72d2608ca28d9934d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652150275 213520 fccbfdd4f70b9f20759340628329575d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652150280 5070099 d9cc9e6fc91a70a0b7dba6e2ce374c6f ""
-  "Class-note.aux" 1652446721 1659 b3d2e5f7a46110897c33bd1a5944b72c "pdflatex"
-  "Class-note.tex" 1652505047 4892 2d463941113595fb071b7cae3d18088e ""
+  "Class-note.aux" 1652923957 1766 c10cde97dfd063fdbe80b8c27bdf66fd "pdflatex"
+  "Class-note.tex" 1652923956 6668 5ce9cf42550cc764469baedf48a5a581 ""
   (generated)
   "Class-note.aux"
-  "Class-note.pdf"
   "Class-note.log"
+  "Class-note.pdf"
