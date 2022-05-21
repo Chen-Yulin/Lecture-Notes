@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage{
+    amsthm,
+    amsmath,
+    amssymb,
+    mathtools
+}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[subsection]
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{example}{Example}[section]
+
+\begin{document}
+\section{Signal \& Systems (Fundamental)}
+\subsection{Signal Definition}
+\begin{definition}[Signal]
+    Any "physical" quantity that varies with time or space (or other independetn variables).
+\end{definition}
+\begin{example}[Ambulance Siren:]
+    \begin{equation}
+        s(t) = (1+t)sin(2\pi [1000t+10t^2+300sin(2\pi t /2)]) 
+    \end{equation}
+    \begin{itemize}
+        \item $ (1+t) $: amplitude term represents incresing loudness as ambulance approaches
+        \item $ 1000t $: represents 1kHz siren oscillatione
+        \item $ 10t^2 $: increasing pitch due to the \emph{Doppler effect} as the ambulance approaches.
+        \item $ 300sim(2\pi 2t) $: the eeh-ooh-eeh-ohh periodic variation in pitch.
+    \end{itemize} 
+\end{example}
+
+\begin{definition}[Systems]
+    A physical "devicec" that performs an operation on a signal.
+\end{definition}
+\begin{definition}[Signal Processing]
+    Take some input signals and produce some related output signals.
+\end{definition}
+\begin{example}[audio amplifier]
+    \begin{equation}
+        S_{out}(t) = aS_{in}(t)
+    \end{equation}
+\end{example}
+Emphasize on continuous-time of analog signals.
+\section{Classification of Signals}
+\subsection{Dimensionality}
+\begin{itemize}
+    \item By the domain of the function, i.e.\ how many arguments a function has.
+    \item By the dimension of the range of the function, i.e.\ the space of values the funciton can take.
+\end{itemize}
+\subsection{Time characteristics}
+\begin{definition}[Continuous-time Signal]
+    A function defined for all times $ t \in (-\infty,\infty) $, or at least some interval $ (a,b) $.
+\end{definition}
+Classify signals by time characteristics
+\begin{itemize}
+    \item Continuous-11:10 signals or analog signals
+    \item Discrete-time signals
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
