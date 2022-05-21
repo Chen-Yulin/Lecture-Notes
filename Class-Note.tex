@@ -12,6 +12,8 @@
 \newtheorem{example}{Example}[section]
 
 \begin{document}
+\tableofcontents
+
 \section{Signal \& Systems (Fundamental)}
 \subsection{Signal Definition}
 \begin{definition}[Signal]
@@ -41,13 +43,13 @@
     \end{equation}
 \end{example}
 Emphasize on continuous-time of analog signals.
-\section{Classification of Signals}
-\subsection{Dimensionality}
+\subsection{Classification of Signals}
+\subsubsection{Dimensionality}
 \begin{itemize}
     \item By the domain of the function, i.e.\ how many arguments a function has.
     \item By the dimension of the range of the function, i.e.\ the space of values the funciton can take.
 \end{itemize}
-\subsection{Time characteristics}
+\subsubsection{Time characteristics}
 \begin{definition}[Continuous-time Signal]
     A function defined for all times $ t \in (-\infty,\infty) $, or at least some interval $ (a,b) $.
 \end{definition}
@@ -56,6 +58,145 @@ Classify signals by time characteristics
     \item Continuous-11:10 signals or analog signals
     \item Discrete-time signals
 \end{itemize}
+\subsubsection{Value Characteristics}
+\begin{definition}[continuous-valued signal or continuous-amplitude signal]
+    Can take any value in some continuous interval.
+\end{definition}
+\begin{definition}[discrete-valued signal or discrete-amplitude signal]
+    Only takes values from a discrete set of possible values.
+\end{definition}
+\subsubsection{Determinstic vs Random Signals}
+\begin{definition}[Determinstic signals]
+    Can be described by an explicit mathematical representation.
+\end{definition}
+\begin{definition}[Random signals]
+    Evolve over time in an unpredictable manner.
+\end{definition}
+
+\subsection{Transformation of CT Signals}
+\subsubsection{Transformations}
+\begin{itemize}
+    \item Time transformations
+        \begin{itemize}
+            \item Folding/reflecting/time-reversal
+                \begin{equation}
+                    y(t)=x(-t)
+                \end{equation}
+            \item Time-scaling
+                \begin{equation}
+                    y(t)=x(at)
+                \end{equation}
+            \item Time-shifting
+                \begin{equation}
+                    y(t)=x(t-t_0)
+                \end{equation}
+            \item General time transformations\\
+                Involves all three of the above time transformations.
+                \begin{equation}
+                    y(t) = x(at-b)=x(\frac{t-t_0}{w})
+                \end{equation}
+                where $ t_0 = b/a $, $ w=1/a $
+        \end{itemize}
+    \item Amplitude transformations
+        \begin{itemize}
+            \item reverse\\
+                \begin{equation}
+                    y(t)=-x(t)
+                \end{equation}
+            \item scaling
+                \begin{equation}
+                    y(t) = ax(t)
+                \end{equation}
+            \item shifting
+                \begin{equation}
+                    y(t)=x(t)+b
+                \end{equation}
+        \end{itemize}
+    \item Differentiator
+        \begin{equation}
+            y(t)=\frac{d}{dt} x(t)
+        \end{equation}
+        \begin{example}
+            \begin{equation}    
+                y(t)=-RC \frac{d}{dt}x(t)
+            \end{equation}
+        \end{example}
+    \item Integrator
+        \begin{equation}
+            y(t)=\int_{-\infty}^t x(\tau)d\tau
+        \end{equation}
+        \begin{example}
+            \begin{equation}    
+                y(t)=-\frac{1}{RC} \int_{-\infty}^t x(\tau)d\tau
+            \end{equation}
+        \end{example}
+    \item Operation with two signals\\
+        Sum or product at any point
+\end{itemize}
+
+\subsection{Signal Characteristic}
+\subsubsection{Periodic signals}
+\begin{equation}
+    x(t+T)=x(t)\forall t
+\end{equation}
+if no $ T $ exists, called aperiodic.
+\begin{definition}[Fundamental Period]
+    Smallest $ T_0 $ of $ T $.
+\end{definition}
+\begin{theorem}
+    With period $ T>0 $,
+    \begin{equation}
+        x(t+nT) = x(t)
+    \end{equation}
+\end{theorem}
+
+Sum of two periodic signals\\
+Suppose a value $ T>0 $ satisfies $ T=n_1T_1 $ and $ T=n_2T_2 $\\
+then, x(t) is periodic with period T.
+\begin{theorem}
+    A sum of two periodic signals is period iff the ratio od their periods is rational.
+\end{theorem}
+\subsubsection{Even and Odd Symmetry}
+\begin{definition}[Even Symmetry]
+    iff $ x(-t) = x(t)\forall t $
+\end{definition}
+\begin{definition}[Odd Symmetry]
+    iff $ x(-t)=x(t)\forall t $
+\end{definition}
+Even and Odd Components\\
+We can decompose any signal into even and odd components:
+\begin{equation}
+    x(t) = x_e(t)+x_o(t)
+\end{equation}
+\begin{equation}
+    x_e(t)=\frac{1}{2}[x(t)+x(-t)],\quad x_o(t) = \frac{1}{2}[x(t)-x(-t)]
+\end{equation}
+\subsubsection{Average value and energy}
+\begin{definition}[Average Value]
+    \begin{equation}
+        A = \lim_{T \to \infty} \frac{1}{2T} \int_{-T}^{T}x(t)dt
+    \end{equation}
+\end{definition}
+\begin{definition}[Energy]
+    \begin{equation}
+        E = \int_{-\infty}^{\infty} |x(t)|^2dt
+    \end{equation}
+\end{definition}
+\begin{definition}[Average Power] 
+    \begin{equation}
+        E =\lim_{T \to \infty} \frac{1}{2T} \int_{-\infty}^{\infty} |x(t)|^2dt
+    \end{equation}
+\end{definition}
+\begin{definition}[Energy Signal]
+    If $ E $ is finite, then $ x(t) $ is called energy signal and $ P=0 $.
+\end{definition}
+\begin{definition}[Power Signal]
+    If $ E $ is infinite and $ P $ is finite and nonzero, $ x(t) $ is called power signal.
+\end{definition}
+
+
+
+
 
 
 
