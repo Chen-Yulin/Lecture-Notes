@@ -11,3 +11,6 @@
 \contentsline {subsubsection}{\numberline {1.4.1}Periodic signals}{3}%
 \contentsline {subsubsection}{\numberline {1.4.2}Even and Odd Symmetry}{4}%
 \contentsline {subsubsection}{\numberline {1.4.3}Average value and energy}{4}%
+\contentsline {subsection}{\numberline {1.5}Exponential signals}{4}%
+\contentsline {subsection}{\numberline {1.6}Continuous0-time system}{5}%
+\contentsline {subsubsection}{\numberline {1.6.1}Classification of CT Systems}{5}%

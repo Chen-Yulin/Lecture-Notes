@@ -184,7 +184,7 @@ We can decompose any signal into even and odd components:
 \end{definition}
 \begin{definition}[Average Power] 
     \begin{equation}
-        E =\lim_{T \to \infty} \frac{1}{2T} \int_{-\infty}^{\infty} |x(t)|^2dt
+        P =\lim_{T \to \infty} \frac{1}{2T} \int_{-T}^{T} |x(t)|^2dt
     \end{equation}
 \end{definition}
 \begin{definition}[Energy Signal]
@@ -193,12 +193,89 @@ We can decompose any signal into even and odd components:
 \begin{definition}[Power Signal]
     If $ E $ is infinite and $ P $ is finite and nonzero, $ x(t) $ is called power signal.
 \end{definition}
-
-
-
-
-
-
+\subsection{Exponential signals}
+To be done
+\subsection{Continuous0-time system}
+\begin{definition}[Continuous-time(CT) System]
+    a device that transforms input CT signal into another output CT signal.
+\end{definition}
+\begin{equation}
+    y(\cdot) = \mathcal{T}(x(\cdot))
+\end{equation}
+\begin{definition}[Input-output Relationship]
+    Precisely defines how the output signal is related to the input signal.
+\end{definition}
+\begin{itemize}
+    \item Series connection
+        \begin{equation}
+            x(t)\rightarrow \boxed{\mathcal{T}_1}\rightarrow \boxed{\mathcal{T}_2} \rightarrow y(t)
+        \end{equation}
+        \begin{equation}
+            y(t)=\mathcal{T}_2[\mathcal{T}_1[x(t)]]
+        \end{equation}
+    \item Parallel connection
+        \begin{equation}
+            y(t)=\mathcal{T}_1[x(t)]+\mathcal{T}_2[x(t)]
+        \end{equation}
+\end{itemize}
+\subsubsection{Classification of CT Systems}
+\begin{itemize}
+    \item Amplitude properties
+        \begin{itemize}
+            \item A-1 linearity
+                \begin{equation}
+                    \mathcal{T}[a_1x_1(t)+a_2x_2(t)] = a_1\mathcal{T}[x_1(t)]+a_2 \mathcal{T}[x_2(t)]
+                \end{equation}
+                \textbf{Property}\\
+                \begin{equation}
+                    \mathcal{T}[ax(t)] = a\mathcal{T}[x(t)]
+                \end{equation}
+                superpostion property
+                \begin{equation}
+                    \mathcal{T}[\sum_{k=1}^{K} \mathcal{T}[x_k(t)]]
+                \end{equation}
+                \begin{equation}
+                    \mathcal{T}[\int x(t;v)dv]=\int \mathcal{T}[x(t;v)]dv
+                \end{equation}
+            \item A-2 stability\\
+                Satisfy BIBO
+               \begin{definition}[Bounded-input Bounded-output (BIBO) stable]
+                   Every bounded input produces a bounded output
+               \end{definition}
+               \textbf{Triangle Inquality}\\
+               \begin{equation}
+                   |\sum_n a_n| \leq \sum_n |a_n|
+               \end{equation}
+            \item invertibility
+                \begin{definition}[invertible]
+                    each output signal is the response to only one input signal.
+                \end{definition}
+                \textbf{Property}\\
+                \begin{equation}
+                    \mathcal{T}^{-1}[\mathcal{T}[x(t)]]=x(t)
+                \end{equation}
+        \end{itemize}
+    \item Time properties
+        \begin{itemize}
+            \item T-1 causality
+                \begin{definition}[Casual System]
+                    The output $ y(t) $ at time $ t $ only depends on the present and (possibly) past inputs, not on future inputs.
+                \end{definition}
+                Noncasual systems arise often when t is other variables than time, such as space.
+            \item T-2 memory
+                \begin{definition}[Static system or Memoryless System]
+                    The output $ y(t) $ at time $ t $ only depends on the current input $ x(t) $.\\
+                    Otherwise is a dynamic system.
+                \end{definition}                
+            \item T-3 time-invariance
+                Systems whose input-output behavior does not change with time
+                \begin{definition}[Time Invariant]
+                    \begin{equation}
+                        x(t)\mathop{\rightarrow}\limits^{\mathcal{T}}y(t) \quad implies\; that \quad x(t-t_0)\mathop{\rightarrow}\limits^{\mathcal{T}}y(t-t_0)
+                    \end{equation}
+                \end{definition}
+        \end{itemize}
+\end{itemize}
 
 
 
