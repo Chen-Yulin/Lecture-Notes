@@ -195,7 +195,27 @@ We can decompose any signal into even and odd components:
 \end{definition}
 \subsection{Exponential signals}
 To be done
-\subsection{Continuous0-time system}
+\subsection{Sigularity functions}
+\subsubsection{Transformed rect functions}
+$ rect(\frac{t-t_0}{T}) $ centered ar $ t_0 $ with width $ T $.
+\subsubsection{Unit impulse function}
+$ \delta(t) $, area is 1 and width  is 0\\
+relationships: $ \delta(t)=\frac{d}{dt} u(t),\; u(t)=\int_{-\infty}^t \delta(\tau)d\tau $\\
+scaling property: $ \delta(at+b) = \frac{1}{|a|}\delta(t+b/a)$
+\subsubsection{Practical impulse function}
+\begin{equation}   
+    \delta_\Delta (t) = \left \{ 
+        \begin{aligned}
+            & \frac{1}{\Delta}, & 0<t<\Delta \\
+            & 0, & otherwise
+        \end{aligned}
+        \right.  
+\end{equation}
+width approaches zero as $ \Delta \rightarrow 0 $; height approaches infinity as $\Delta \rightarrow 0 $
+\begin{equation}
+    \delta (t)=\lim_{\Delta \to 0} \delta_\Delta (t)
+\end{equation}
+\subsection{Continuous-time system}
 \begin{definition}[Continuous-time(CT) System]
     a device that transforms input CT signal into another output CT signal.
 \end{definition}
@@ -276,6 +296,31 @@ To be done
                 \end{definition}
         \end{itemize}
 \end{itemize}
+
+
+\section{CT LTI Systems}
+\subsection{Introduction}
+Primary forcus: \textbf{CT linear-time-variant (LTI)} systems.
+Overview:\\
+\begin{equation}
+    x(t)\rightarrow \boxed{LTI\; with \; imulse\; response\; h(t)}\rightarrow y(t) = x(t) * h(t)
+\end{equation}
+where $ \delta(t) \mathop{\rightarrow}\limits^\mathcal{T} h(t) $\\
+Input-output relationships (given by convolution intergral):
+\begin{equation}
+    y(t)=\int _{-\infty}^{\infty} x(\tau) h(t-\tau)d\tau
+\end{equation}
+\begin{itemize}
+    \item Any system whose input and output can be discribed by the above form is LTI system
+    \item An LTI system is completely described by its impulse response $ h(t) $
+    \item We can determine the response $ y(t) $ due to any input signal with impulse response.
+\end{itemize}
+
+
+
+
+
+
 
 
 

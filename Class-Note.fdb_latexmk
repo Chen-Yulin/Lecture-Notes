@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1653207063 "Class-Note.tex" "Class-Note.pdf" "Class-Note" 1653207063
+["pdflatex"] 1653550591 "Class-Note.tex" "Class-Note.pdf" "Class-Note" 1653631464
   "/etc/texmf/web2c/texmf.cnf" 1648442041 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/chenyulin/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1652165516 11524 67eb1214e685c27febf24411688b98f2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -21,6 +21,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
@@ -54,11 +55,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652150275 213520 fccbfdd4f70b9f20759340628329575d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652150280 5070099 d9cc9e6fc91a70a0b7dba6e2ce374c6f ""
-  "Class-Note.aux" 1653207063 1857 f5e3c96682b561a8f85c4d907fdfc847 "pdflatex"
-  "Class-Note.tex" 1653207061 10065 fad2ff7146f9058ba5b2fc9ac6c068ab ""
-  "Class-Note.toc" 1653207063 1193 5dc2f2fd4725cbd91b9947e0931cbf0c "pdflatex"
+  "Class-Note.aux" 1653550592 2531 f77f8f83279794320f582153d63f56cd "pdflatex"
+  "Class-Note.tex" 1653550590 11664 ef0d92e945b2e5526bcf209a8c335da6 ""
+  "Class-Note.toc" 1653550592 1621 47c7f0a657a525995969d60766c5a4bf "pdflatex"
   (generated)
-  "Class-Note.aux"
   "Class-Note.toc"
   "Class-Note.log"
   "Class-Note.pdf"
+  "Class-Note.aux"
