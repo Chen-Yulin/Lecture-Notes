@@ -315,7 +315,87 @@ Input-output relationships (given by convolution intergral):
     \item An LTI system is completely described by its impulse response $ h(t) $
     \item We can determine the response $ y(t) $ due to any input signal with impulse response.
 \end{itemize}
+\subsection{LTI system properties}
+\subsubsection{Properties of Convolution and Impulse Functions}
+\begin{itemize}
+    \item commutative property
+        \begin{equation}
+            x(t)*h(t)=h(t)*x(t)
+        \end{equation}
+    \item associative property
+        \begin{equation}
+            [x(t)*h_1(t)]*h_2(t)=x(t)*[h_1(t)*h_2(t)]
+        \end{equation}
+    \item distributive property
+    \item \begin{equation}
+        x(t)*\delta(t)=x(t)
+    \end{equation}
+    \item delay property
+        \begin{equation}
+            x(t)*\delta(t-t_0)=x(t-t_0)
+        \end{equation}
+    \item If $ y(t)=x(t)*h(t) $, then $ x(t-t_0)*h(t-t_1)=y(t-t_0-t_1) $
+\end{itemize}
 
+
+there are four remaining properties in terms of $ h(t) $.
+\begin{itemize}
+    \item T-1 casusality
+        \begin{align*}
+            y(t) &= \int_{-\infty}^{\infty} h(\tau)x(t-\tau)d\tau \\
+                 &= \int _0^{\infty}h(\tau)x(t-\tau)d\tau +\int_{-\infty}^{0^-}h(\tau)x(t-\tau)d\tau
+        \end{align*}
+        \begin{definition}[LTI causal]
+            An LTI system is causal iff its impulse response $ h(t)=0 $ for all $ t<0 $.
+        \end{definition}
+        then using $ \tau ' = t-\tau $
+        \begin{equation}
+            y(t)=\int _0^{\infty}h(\tau)x(t-\tau)d\tau=\int_{-\infty}^t x(\tau ')h(t-\tau ')d\tau'
+        \end{equation}
+    \item T-2 memory
+        \begin{definition}[LTI memoyless]
+            Iff its impulse response is $ h(t) = a\delta(t) $. Otherwise is dynamic.
+        \end{definition}
+        In this case, the response is $ y(t)=ax(t) $\\
+        There are two classes of dynamic systems:
+        \begin{itemize}
+            \item \begin{definition}[finite impulse response (FIR)]
+                has$ h(t) $ tha is nonzero only within some finite interval $ t_1<t<t_2 $.
+            \end{definition}
+            \item \begin{definition}[infinite impulse response (IIR)]
+                has $ h(t) $ that persists indefinitely.
+            \end{definition}
+        \end{itemize}
+    \item A-2 stability
+        Suppose $ x(t) $ is a bounded input signal $ |x(t)| \leq M_x < \infty\;\; \forall t $.
+        \begin{align*}
+            |y(t)| &= |\int_{-\infty}^{\infty} h(\tau)x(t-\tau)d\tau| \\
+                   &\leq \int_{-\infty}^{\infty} |h(\tau)x(t-\tau)| d\tau \quad (trangle\; inequality) \\
+                   &=\int_{-\infty}^{\infty} |h(\tau)||x(t-\tau)|d\tau \\
+                   &\leq M_x \int_{-\infty}^{\infty}|h(\tau)|d\tau
+        \end{align*}
+        So, sufficient condition:
+        \begin{equation}
+            \int_{-\infty}^{\infty}|h(\tau)|d\tau < \infty
+        \end{equation}
+        \begin{definition}[LTI BIBO stable]
+            Iff its imppluse response is absolutely integrable, i.e. $ \int_{-\infty}^{\infty} |h(t)|dt <\infty $
+        \end{definition}
+    \item A-3 invertibility
+        Fact: if a system is LTI, then if it is also invertible, the inverse system is also LTI.
+        \begin{equation}
+            x(t)\rightarrow \boxed{LTI\; h(t)}\rightarrow y(t) \rightarrow \boxed{LTI h_i(t)} \rightarrow z(t) = x(t)
+        \end{equation}
+        The cascade of two LTI system is also LTI.\\
+        \begin{definition}[LTI invertible]
+            If the system is invertible, then
+            \begin{equation}
+                h(t)*h_i(t) = \delta(t)
+            \end{equation}
+        \end{definition}
+\end{itemize}
+\subsection{Step response}
+A way to find the impluse response $ h(t) $ of an LTI system in practice.
 
 
 

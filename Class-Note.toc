@@ -20,3 +20,6 @@
 \contentsline {subsubsection}{\numberline {1.7.1}Classification of CT Systems}{6}%
 \contentsline {section}{\numberline {2}CT LTI Systems}{7}%
 \contentsline {subsection}{\numberline {2.1}Introduction}{7}%
+\contentsline {subsection}{\numberline {2.2}LTI system properties}{7}%
+\contentsline {subsubsection}{\numberline {2.2.1}Properties of Convolution and Impulse Functions}{7}%
+\contentsline {subsection}{\numberline {2.3}Step response}{9}%
